@@ -1,0 +1,37 @@
+@media (max-width: 75rem) {
+    body {
+        font-size: 1.6rem;
+    }
+
+    .header {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 50rem) {
+    .header {
+        height: 50vh;
+    }
+
+    .heading {
+        font-size: 250%;
+    }
+
+    .heading2 {
+        font-size: 150%;
+    }
+
+    .over__p {
+        width: 100%;
+    }
+
+    .kenmerken__listItem {
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .galerij__foto {
+        width: 100%;
+        object-fit: cover;
+    }
+}

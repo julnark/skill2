@@ -1,0 +1,63 @@
+@use 'component';
+
+.galerij {
+    @extend %section;
+    padding: 0
+}
+
+.galerij__header{
+    @extend %header;
+    padding-bottom: 2rem;
+}
+
+.galerij__h2{
+    @extend %h2Handwriting;
+}
+
+.galerij__fotos{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.galerij__foto{
+    width: 25%;
+    height: 40rem;
+    position: relative;
+}
+
+.galerij__img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galerij__gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(22, 66, 60, 0.3), 80%, rgba(233, 239, 236, 0.3));
+    transform: scaleX(0);
+    transition: 0.8s;
+    transform-origin: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galerij__button{
+    @extend %cta;
+    opacity: 0;
+    transition-delay: 0.8s;
+    transition-duration: 0.2s;
+}
+
+.galerij__foto:hover .galerij__button{
+    opacity: 1;
+}
+
+.galerij__foto:hover .galerij__gradient{
+    transform: scaleX(1);
+}

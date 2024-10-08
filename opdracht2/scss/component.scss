@@ -1,0 +1,51 @@
+@use 'colors';
+@use 'fonts';
+
+//Buttons Styling
+%cta{
+    width: 11rem;
+    padding: 1rem;
+    font-size: 70%;
+    background: colors.$button;
+    border: none;
+    color: colors.$fontcolor;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+%cta:hover{
+    cursor: pointer;
+    background: darken(colors.$button, 20%);
+    transition: 0.2s;
+}
+
+//H2 Heading for sections and header
+%h2Handwriting{
+    font-family: fonts.$handwriting;
+    font-size: 200%;
+    color: colors.$fontcolor;
+}
+
+//defeault header for sections
+%header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+//Defeault sections
+%section{
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    border-bottom: colors.$border-over;
+}
+
+//Icoon
+%icon{
+    font-size: 200%;
+    color: colors.$fontcolor;
+    border: colors.$border;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
