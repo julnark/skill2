@@ -1,0 +1,16 @@
+@use './abstracts/mixins';
+@use './abstracts/colors';
+
+*:focus{
+    outline: 0.2rem dashed #40534C !important;
+}
+
+body {
+    @include mixins.flexCenter;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+    font-family: "Noto Serif", serif;
+    background: colors.$gradient;
+}

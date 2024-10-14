@@ -1,0 +1,36 @@
+@use '../../abstracts/colors';
+
+.toggle__input {
+    appearance: none;
+    width: 9rem;
+    height: 4rem;
+    border: 0.1rem solid rebeccapurple;
+    border-radius: 5rem;
+    position: relative;
+    background: colors.$background_dark;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:checked {
+        background: colors.$gradient;
+    }
+
+    &:checked::after {
+        left: 80%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 5rem;
+        width: 5rem;
+        background: colors.$gradient;
+        border-radius: 50%;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+}

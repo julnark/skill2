@@ -1,0 +1,25 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin rotate($duration: 0.6s) {
+    transform: rotate(360deg);
+    transition: $duration all;
+}
+
+@mixin Updock {
+    font-weight: 400;
+    font-family: "Updock", cursive;
+}
+
+@mixin Merienda {
+    font-weight: 400;
+    font-family: "Merienda", cursive;
+}
+
+@mixin Patrick {
+    font-weight: 400;
+    font-family: "Patrick Hand", cursive;
+}
